@@ -5,20 +5,20 @@
 class GreeterCli < Formula
   desc "A simple CLI to greet users"
   homepage "https://github.com/abelpenton/go-greeter-user"
-  version "7.0.0"
+  version "7.0.1"
 
   on_macos do
     on_intel do
-      url "https://github.com/abelpenton/go-greeter-user/releases/download/v7.0.0/go-greeter-user_Darwin_x86_64.tar.gz"
-      sha256 "2db7988413bdfa485b97fb7f5051cc0b45dfa3a9cc3407aabded1c4426963af1"
+      url "https://github.com/abelpenton/go-greeter-user/releases/download/v7.0.1/go-greeter-user_Darwin_x86_64.tar.gz"
+      sha256 "f35352fd480aa01bcc2498197129fc5fb339509b81500a5d4344f25e9edc611d"
 
       def install
         bin.install "go-greeter-user"
       end
     end
     on_arm do
-      url "https://github.com/abelpenton/go-greeter-user/releases/download/v7.0.0/go-greeter-user_Darwin_arm64.tar.gz"
-      sha256 "07887e694d4e3d3423410e3598f3b1926aeabbee57cbba6cd2207a54a88a0bcb"
+      url "https://github.com/abelpenton/go-greeter-user/releases/download/v7.0.1/go-greeter-user_Darwin_arm64.tar.gz"
+      sha256 "5301b077e211e5bfa964c5bec58fe668d18dd39bec1e324d1d8c9252da0a00ac"
 
       def install
         bin.install "go-greeter-user"
@@ -29,8 +29,8 @@ class GreeterCli < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/abelpenton/go-greeter-user/releases/download/v7.0.0/go-greeter-user_Linux_x86_64.tar.gz"
-        sha256 "5090527b09d2c9f9661484028b0a79ade8465c81c8825d6fc244dcdaba5f478c"
+        url "https://github.com/abelpenton/go-greeter-user/releases/download/v7.0.1/go-greeter-user_Linux_x86_64.tar.gz"
+        sha256 "acdacec6e07386355e44d854720c07bc3c5e53c37f43f8b465d674318074ded0"
 
         def install
           bin.install "go-greeter-user"
@@ -39,8 +39,8 @@ class GreeterCli < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/abelpenton/go-greeter-user/releases/download/v7.0.0/go-greeter-user_Linux_arm64.tar.gz"
-        sha256 "026db827e26ea2a74dd0ee006fb01803a9267b93d17522fa8d2dbcfd8271a241"
+        url "https://github.com/abelpenton/go-greeter-user/releases/download/v7.0.1/go-greeter-user_Linux_arm64.tar.gz"
+        sha256 "8277c6e10ba30f453d994f6740b647a2dabc219369a05bb64f644c1a5b812ce0"
 
         def install
           bin.install "go-greeter-user"
